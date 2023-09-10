@@ -26,6 +26,15 @@
                 @enderror
         </div>
         <div class="mt-2">
+            <h1>NIK</h1>
+            <input type="text" class="border-2 w-full @error('NIK') border-red-500 @enderror" name="NIK" id="NIK" value="{{ old('NIK') }}" placeholder="NIK">
+            @error('NIK')
+            <div class="invalid-feedback text-red-500">
+                {{ $message }}
+            </div>
+                @enderror
+        </div>
+        <div class="mt-2">
             <h1>Email</h1>
             <input type="text" class="border-2 w-full @error('email') border-red-500 @enderror" name="email" id="email" value="{{ old('email') }}" placeholder="Email">
             @error('email')
